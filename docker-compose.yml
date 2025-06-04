@@ -1,0 +1,37 @@
+
+
+services:
+  backend:
+    build: ./BackEnd
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./BackEnd:/app
+    restart: unless-stopped
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://postgres:Himanshu%401971@db:5432/speedometerdb
+
+  frontend:
+    build: ./FrontEnd/speedometer
+    ports:
+      - "5173:5173"
+    restart: unless-stopped
+    depends_on:
+      - backend
+
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Himanshu@1971
+      POSTGRES_DB: speedometerdb
+    ports:
+      - "5050:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

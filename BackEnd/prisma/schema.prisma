@@ -1,0 +1,18 @@
+// Configure the Prisma Client generator
+generator client {
+  provider      = "prisma-client-js"                      // Use the JavaScript Prisma Client
+  binaryTargets = ["native", "windows", "debian-openssl-3.0.x"] // Specify platforms for binary generation (useful for cross-environment deployments)
+}
+
+// Define the data source (your database connection)
+datasource db {
+  provider = "postgresql"         // Specify PostgreSQL as the database provider
+  url      = env("DATABASE_URL")  // Read the connection URL from an environment variable
+}
+
+// Define the SpeedLog model which maps to a database table
+model SpeedLog {
+  id         Int      @id @default(autoincrement()) // Primary key, auto-incrementing integer
+  speed      Int                                     // Speed value to be stored
+  created_at DateTime @default(now())               // Timestamp of when the entry was created, defaulting to the current time
+}
