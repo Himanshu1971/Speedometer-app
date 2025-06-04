@@ -3,48 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Real-Time Speedometer App</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      line-height: 1.6;
-      background-color: #f8f9fa;
-      color: #333;
-    }
-    code {
-      background: #eee;
-      padding: 0.2rem 0.4rem;
-      border-radius: 4px;
-      font-family: monospace;
-    }
-    pre {
-      background: #272822;
-      color: #f8f8f2;
-      padding: 1rem;
-      overflow-x: auto;
-      border-radius: 6px;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    a {
-      color: #007bff;
-    }
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin-top: 1rem;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 0.75rem;
-    }
-    th {
-      background-color: #f1f1f1;
-      text-align: left;
-    }
-  </style>
+  
 </head>
 <body>
 
