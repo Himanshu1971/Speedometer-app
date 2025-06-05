@@ -86,7 +86,8 @@
   </ol>
 
   <h2>🐳 Docker Image</h2>
-  <p>👉 <a href="https://hub.docker.com/your-docker-link-here" target="_blank">Your DockerHub Link Here</a></p>
+  <p>👉 <a href="https://hub.docker.com/repository/docker/himanshu1971/speedometer-backend/general" target="_blank">Backend</a></p>
+  <p>👉 <a href="https://hub.docker.com/repository/docker/himanshu1971/speedometer-frontend/general " target="_blank">Frontend</a></p>
 
   <h2>🙌 Acknowledgements</h2>
   <ul>
